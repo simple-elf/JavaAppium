@@ -53,7 +53,7 @@ public class Platform {
         capabilities.setCapability("appPackage","org.wikipedia");
         capabilities.setCapability("appActivity",".main.MainActivity");
         //capabilities.setCapability("app","C:\\Users\\simpl\\IdeaProjects\\JavaAppiumAutomation\\apks\\org.wikipedia.apk"); // for Windows
-        capabilities.setCapability("app","/Users/simple1elf/IdeaProjects/JavaAppiumAutomation/apks/org.wikipedia.apk"); //for MacOs
+        capabilities.setCapability("app","/Users/simple1elf/JavaAppium/apks/org.wikipedia.apk"); //for MacOs
 
         return capabilities;
     }
@@ -64,7 +64,7 @@ public class Platform {
         capabilities.setCapability("platformName","iOS");
         capabilities.setCapability("platformVersion","11.2");
         capabilities.setCapability("deviceName","iPhone SE");
-        capabilities.setCapability("app","/Users/simple1elf/IdeaProjects/JavaAppiumAutomation/apks/Wikipedia.app");
+        capabilities.setCapability("app","/Users/simple1elf/JavaAppium/apks/Wikipedia.app");
 
         return capabilities;
     }
@@ -75,7 +75,7 @@ public class Platform {
     }
 
     private String getPlatformVar() {
-        return System.getenv("PLATFORM");
+        return System.getProperty("PLATFORM");
     }
 
 }
