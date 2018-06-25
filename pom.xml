@@ -8,6 +8,10 @@
     <artifactId>JavaAppium</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <PLATFORM>android</PLATFORM>
+    </properties>
+
     <dependencies>
 
         <dependency>
@@ -45,7 +49,7 @@
 
                 <configuration>
                     <systemPropertyVariables>
-                        <PLATFORM>ios</PLATFORM>
+                        <PLATFORM>${PLATFORM}</PLATFORM>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
