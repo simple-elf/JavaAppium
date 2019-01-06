@@ -5,10 +5,10 @@ import org.junit.runners.Suite;
 import tests.*;
 
 @Suite.SuiteClasses({
-        ArticleTests.class,
-        ChangeAppConditionTests.class,
-        GetStartedTest.class,
-        MyListsTests.class,
+        //ArticleTests.class,
+        //ChangeAppConditionTests.class,
+        //GetStartedTest.class,
+        //MyListsTests.class,
         SearchTests.class
 })
 

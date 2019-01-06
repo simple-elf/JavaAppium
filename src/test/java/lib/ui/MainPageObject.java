@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class MainPageObject {
@@ -66,7 +67,7 @@ public class MainPageObject {
         int middleY = (upperY + lowerY) / 2;
 
         TouchAction action = new TouchAction(driver);
-        action.press(rightX, middleY).waitAction(150);
+        action.press(rightX, middleY).waitAction(Duration.ofSeconds(150));
 
         if (Platform.getInstance().isAndroid()) {
             action.moveTo(leftX, middleY);
@@ -122,7 +123,7 @@ public class MainPageObject {
 
         action
                 .press(x, startY)
-                .waitAction(timeOfSwipe)
+                .waitAction(Duration.ofSeconds(timeOfSwipe))
                 .moveTo(x, endY)
                 .release()
                 .perform();

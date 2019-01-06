@@ -5,6 +5,8 @@ import junit.framework.TestCase;
 import lib.ui.WelcomePageObject;
 import org.openqa.selenium.ScreenOrientation;
 
+import java.time.Duration;
+
 public class CoreTestCase extends TestCase {
 
     protected AppiumDriver driver;
@@ -35,7 +37,7 @@ public class CoreTestCase extends TestCase {
     }
 
     protected void backgroundApp(int seconds) {
-        driver.runAppInBackground(seconds);
+        driver.runAppInBackground(Duration.ofSeconds(seconds));
     }
 
     private void skipWelcomePageForIOSApp() {
