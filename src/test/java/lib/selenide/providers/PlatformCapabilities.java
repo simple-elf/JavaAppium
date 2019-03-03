@@ -1,4 +1,4 @@
-package lib.ui.providers;
+package lib.selenide.providers;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 

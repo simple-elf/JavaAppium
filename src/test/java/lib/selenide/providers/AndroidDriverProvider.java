@@ -1,11 +1,11 @@
-package lib.ui.providers;
+package lib.selenide.providers;
 
 import com.codeborne.selenide.WebDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static lib.ui.providers.PlatformCapabilities.*;
+import static lib.selenide.providers.PlatformCapabilities.*;
 
 public class AndroidDriverProvider implements WebDriverProvider {
 

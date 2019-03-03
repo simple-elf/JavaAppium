@@ -51,7 +51,7 @@ public class MainPageObject {
         int pointClickX = (rightX + width) - 3;
         int pointClickY = middleY;
         TouchAction action = new TouchAction(driver);
-        action.tap(pointClickX, pointClickY).perform();
+        //action.tap(pointClickX, pointClickY).perform();
     }
 
     public void swipeElementToLeft(By by, String errorText) {
@@ -67,13 +67,13 @@ public class MainPageObject {
         int middleY = (upperY + lowerY) / 2;
 
         TouchAction action = new TouchAction(driver);
-        action.press(rightX, middleY).waitAction(Duration.ofSeconds(150));
+        //action.press(rightX, middleY).waitAction(Duration.ofSeconds(150));
 
         if (Platform.getInstance().isAndroid()) {
-            action.moveTo(leftX, middleY);
+            //action.moveTo(leftX, middleY);
         } else {
             int offsetX = (-1 * element.getSize().getWidth());
-            action.moveTo(offsetX, 0);
+            //action.moveTo(offsetX, 0);
         }
 
 
@@ -122,9 +122,9 @@ public class MainPageObject {
         int endY = (int) (size.height * 0.3);
 
         action
-                .press(x, startY)
-                .waitAction(Duration.ofSeconds(timeOfSwipe))
-                .moveTo(x, endY)
+                //.press(x, startY)
+                //.waitAction(Duration.ofSeconds(timeOfSwipe))
+                //.moveTo(x, endY)
                 .release()
                 .perform();
     }
